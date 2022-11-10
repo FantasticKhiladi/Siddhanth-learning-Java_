@@ -1,0 +1,18 @@
+	public static int tempTransfer(int start , int end , int step ) {
+		int Celcius = 0;
+		for ( start=start; start<=end; start+=step){
+			Celcius = (start - 32) * 5/9;
+			System.out.println(start + " " + Celcius);
+		}	return Celcius;
+		}
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	
+	int start = sc.nextInt();
+	int end = sc.nextInt();
+	int step = sc.nextInt();
+
+	int Celcius =  tempTransfer( start , end , step );
+	
+	
+	}}
