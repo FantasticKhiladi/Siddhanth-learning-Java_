@@ -1,0 +1,19 @@
+public static boolean prime(int n) {
+		int div =2;
+		while(div<=n/2) {
+			if (n%2==0) {
+				return false;
+			}
+			div++;
+		}
+	return true;}
+		
+	
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int n =sc.nextInt();
+	
+	boolean check = prime(n);
+	System.out.println(check);
+	
+					}}
