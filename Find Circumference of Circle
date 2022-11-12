@@ -1,0 +1,11 @@
+	public static double circumference(double n) {
+	  double circum = (2 * 3.14 *n);
+	  return  circum;
+	}
+		public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float n = sc.nextFloat();
+		
+		double circum = circumference(n);
+		System.out.println(circum);
+	}}
