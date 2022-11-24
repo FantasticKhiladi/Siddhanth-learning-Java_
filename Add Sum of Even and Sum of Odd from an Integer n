@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int soo = 0;                     //sum of odd
+		int soe = 0;                    // sum of even
+		while(n!=0)
+		{ int lastDigit = n%10;           //lastDigit can be found out by dividing N by 10 and the reamainder will be the last digit
+			n = (int)n/10;                  //when we have the last digit then we know that we can check if it is even then add to sum of even or odd to sum of odd
+		if (lastDigit % 2 ==0)
+			soe+=lastDigit;
+		if (lastDigit % 2 !=0)
+			soo +=lastDigit;
+		}System.out.println(soe + " " + soo);
+		}
+	}
