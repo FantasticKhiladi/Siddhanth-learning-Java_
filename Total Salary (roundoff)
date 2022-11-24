@@ -1,0 +1,22 @@
+	Scanner sc = new Scanner(System.in);
+		double basic =sc.nextDouble();
+		char grade = sc.next().charAt(0);
+		Character.toUpperCase(grade);
+		double hra = basic * 20/100;
+		double da =  basic * 50/100;
+		int allow =0;
+		if(grade =='A')                                     //this allowance and grade relation might be provided to you in the question
+			allow =1700;
+		else if(grade =='B')
+			allow =1500;
+		else if(grade >='C' && grade <='Z')
+			allow =1300;
+		double pf = basic *11/100;
+		double salary = basic +hra+da+allow-pf;
+		double totalSalary = (double)salary - (int)salary;    //this is done because we have to round off the salary
+		if(totalSalary <0.5)                                  //for round off
+		{System.out.print((int)salary);}
+		else {System.out.print((int)salary +1);
+		}
+		
+	
