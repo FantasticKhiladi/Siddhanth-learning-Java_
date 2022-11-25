@@ -1,0 +1,29 @@
+public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		
+		int i=1;
+		while(i<=n)
+		{ int spaces = 1;
+		while(spaces<=n-i)
+		{System.out.print(' ');
+		spaces++;
+		}
+		
+		int stars=1;
+		while(stars<= n-spaces+1)
+		{System.out.print('*');
+		stars++;
+		}
+		
+		int dec=i-1+1;
+		while(dec>=n-i)
+		{System.out.print('*');
+		dec--;
+		}
+		
+		System.out.println();
+		i++;
+		}
+		
+		}}
